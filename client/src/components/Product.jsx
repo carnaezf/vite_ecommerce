@@ -36,12 +36,16 @@ export default function Product() {
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
+          <Typography
+            // className={ classes.action }
+            variant='h5'
+            color='textSecondary'
+          >
+            {50}
+          </Typography>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Shoes"
+        subheader="in Stock"
       />
       <CardMedia
         component="img"
