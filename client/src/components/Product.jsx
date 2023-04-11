@@ -44,20 +44,22 @@ export default function Product() {
             {50}
           </Typography>
         }
-        title="Shoes"
+        title="EQT Spikeless Golf Shoes"
         subheader="in Stock"
       />
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
-        alt="Paella dish"
+        image="https://assets.adidas.com/images/w_600,f_auto,q_auto/0ee4ef2f134d46beaefcac5c011c4bca_9366/EQT_Spikeless_Golf_Shoes_Grey_FX7449_06_standard.jpg"
+        alt="shoe"
       />
-      <CardContent>
+      <CardContent> 
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          "Put comfort first. These adidas spikeless golf shoes combine a Bounce midsole and a Boost 
+          heel for a lightweight, responsive feel that helps you convert bogie's to birdies. 
+          They repel water to keep your feet dry through wet fairways. The versatile rubber outsole 
+          ensures easy transitions from your final putt to cold drinks at the clubhouse. 
+          Recycled materials are one step towards reducing plastic waste."
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -78,31 +80,29 @@ export default function Product() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
+          <Typography paragraph>Details:</Typography>
           <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-            aside for 10 minutes.
-          </Typography>
-          <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
-            medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
-            occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
-            large plate and set aside, leaving chicken and chorizo in the pan. Add
-            pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
-            stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+            "EQT Spikeless Golf Shoes",
           </Typography>
           <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and
-            peppers, and cook without stirring, until most of the liquid is absorbed,
-            15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp and
-            mussels, tucking them down into the rice, and cook again without
-            stirring, until mussels have opened and rice is just tender, 5 to 7
-            minutes more. (Discard any mussels that don&apos;t open.)
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
           </Typography>
-          <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
+          <Typography paragraph>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
           </Typography>
+
         </CardContent>
       </Collapse>
     </Card>
