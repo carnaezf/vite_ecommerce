@@ -15,6 +15,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -25,6 +26,9 @@ const ExpandMore = styled((props) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
+
+
+
 
 export default function Product() {
   const [expanded, setExpanded] = React.useState(false);
@@ -39,8 +43,9 @@ export default function Product() {
       item: {
         id,
         name,
-        category,
+        category, // Debe de ser un numero entero
         sellingPrice,
+        // average_rating, comprobar tipo de dato al crear modelo
         description,
         images
       }
@@ -77,9 +82,14 @@ export default function Product() {
         <IconButton  aria-label='Add to Cart' onClick={addToBasket} >
           <AddShoppingCartIcon fontSize='large' />
         </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
+        {
+          Array(5)
+          .fill()
+          .map( ( i ) => (
+            <p>⭐</p>
+          )
+          )
+        }
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -91,9 +101,6 @@ export default function Product() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>
-            "EQT Spikeless Golf Shoes",
-          </Typography>
           <Typography paragraph>
             "Put comfort first. These adidas spikeless golf shoes combine a Bounce midsole and a Boost
             heel for a lightweight, responsive feel that helps you convert bogie's to birdies.
